@@ -1,0 +1,141 @@
+* { margin: 0; }
+body {
+    font-size: 20px;
+}
+main {
+    margin: 0 20px;
+    padding-bottom: 40vh;
+}
+img {
+    width: 100%;
+    display:block;
+}
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+li {
+    text-indent: 0;
+    margin-left: 1em;
+}
+section, div.section {
+    margin-bottom: 40px;
+}
+code{
+    font-size: 21px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+textarea {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+textarea.editor {
+    background-color: #000;
+    color: #eee;
+}
+button {
+    font-size: 20px;
+}
+.center {
+    text-align: center;
+}
+.small {
+    font-size: 0.75em;
+}
+.blue {
+    color: #00f;
+}
+.flex-container {
+    display: flex;
+}
+.flex-container > * {
+    flex: 1;
+}
+.section-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.section-body {
+    margin: 20px 0;
+}
+.section-body {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 800px;
+}
+.section-body.fullWidth {
+    width: 100%;
+    min-width: none;
+}
+.code-container
+{
+    padding: 20px;
+    background-color: #e7e7e7;
+    display: inline-block;
+}
+.code-container.section-body {
+    display: block;
+}
+.indent-level-1
+{
+    display: inline-block;
+    width: 2em;
+}
+.indent-level-2
+{
+    display: inline-block;
+    width: 4em;
+}
+.hint{
+    color: blue;
+    display: inline-block;
+    position: relative;
+}
+.hint:hover
+{
+    background-color: #fff;
+}
+.hint-index
+{
+    font-size: 0.7em;
+    position: relative;
+    top: -0.8em;
+}
+.tip
+{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    color: #00f;
+    min-width: 160px;
+    max-width: 300px;
+    font-family: serif;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.hint:hover .tip
+{
+    display: block;
+    
+    transform: translate(0, 100%);
+}
+#example-info
+{
+    border-bottom: 2px solid;
+    padding: 10px 0;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+}
+#example-filename
+{
+    font-family: monospace;
+}

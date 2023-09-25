@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>商城範例 (6)</title>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/cart.css" rel="stylesheet">
+    <script src="assets/js/cookie.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <section id="example-info" class="center">
+            <h1 id="example-title" class="section-title">商城範例 (6)</h1>
+            <p id="example-filename">ch05_ex13_cart-6.html</p>
+        </section>
+        <div id="shop-container">
+            <button id="cart-toggle">購物車</button>
+            <div id="products-container"></div>
+            <div id="cart-container">
+                <div id="added-products-container">
+                    <div class="added-product">
+                        <span class="added-product-title">商品名稱</span>
+                        <span class="added-product-price">價格</span>
+                    </div>
+                </div>
+                <div>購物車內有 <span id="cart-amount">0</span> 項商品</div>
+                <div>總計 <span id="cart-subtotal">0</span> 元</div>
+            </div>
+            <a class="btn" href="checkout.html">確認商品並結帳</a>
+        </div>
+    </main>
+    <script src="assets/js/shop.js"></script>
+    <script>
+        let productsInCookie = JSON.parse(getCookie(shop.cookieName));
+        shop.init(productsInCookie);
+    </script>
+</body>
+
+</html>
